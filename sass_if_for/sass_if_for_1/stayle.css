@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  overflow: hidden; /* float を適用した要素を正しく表示 */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #000;
+}
+
+.is-float {
+  float: left;
+}
+
+.is-not-float {
+  float: right;
+}/*# sourceMappingURL=stayle.css.map */
