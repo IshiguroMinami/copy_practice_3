@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.header__nav-item {
+  padding-right: 20px;
+  list-style: none;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  display: flex;
+}
+
+h2 {
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+
+.kv {
+  margin-bottom: 80px;
+}
+.kv__image {
+  width: 100%;
+}
+
+.about__title {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about__image {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.about__text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.about__name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about__description {
+  line-height: 1.6;
+}
+
+.bicycle__title {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.bicycle__list {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 90px 0;
+  list-style: none;
+  margin: 0;
+}
+.bicycle__item {
+  width: 250px;
+  margin-right: 20px;
+}
+.bicycle__item:last-child {
+  margin-right: 0;
+}
+.bicycle__image {
+  width: 100%;
+}
+.bicycle__name {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.bicycle__description {
+  font-size: 0.9rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0;
+}
+.footer__copyright {
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .kv__image {
+    height: calc(100vh - 50px);
+  }
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .about__name {
+    text-align: left;
+  }
+  .bicycle__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bicycle__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .bicycle__item:last-child {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
