@@ -64,6 +64,9 @@ html, body, h1, h2, p, ul, li {
 .header__nav-item {
   margin-left: 30px;
 }
+.header__nav-item:first-child {
+  margin-left: 0;
+}
 .header__nav-link {
   color: #24292e;
   opacity: 0.7;
