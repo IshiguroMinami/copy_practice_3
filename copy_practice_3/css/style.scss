@@ -1,52 +1,74 @@
 @charset "UTF-8";
 
 // 変数
-$color-base: #000;
-$font-main: serif;
+$color-base: #2d2d2d;
+$font-main: 'Crimson Text', serif;
 $breakpoint-sp: 767px;
 $container-width: 1000px;
+
+// リセット
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 100%;
 }
+
 body {
   color: $color-base;
   font-family: $font-main;
   font-size: 16px;
-  line-height: 1.6;
   margin: 0;
+  vertical-align: bottom;
 }
+
 img {
   max-width: 100%;
   vertical-align: bottom;
 }
-ul {
-  list-style: none;
-}
+
 a {
   color: $color-base;
   text-decoration: none;
 }
 
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+// レイアウト
 .container {
   max-width: $container-width;
   margin: 0 auto;
   padding: 0 18px;
 }
 
-// メインビジュアル
+// Main Visual
 .main-visual {
   width: 90vw;
   margin: 4% auto 0 auto;
 }
 
-// ヘッダー
+// Header
 .header {
   width: 90vw;
   display: flex;
   align-items: center;
-  padding: 30px 0;
+  padding: 32px 0;
   margin: 0 auto 30px;
+  height: 82px;
 
   &__title {
     width: 110px;
@@ -60,10 +82,11 @@ a {
 
   &__list {
     display: flex;
+    padding-left: 0;
   }
 
   &__item {
-    font-size: 15px;
+    font-size: 0.875rem;
     margin-right: 30px;
 
     &:last-child {
@@ -72,7 +95,7 @@ a {
   }
 }
 
-// セクション
+// Section 共通
 .section {
   display: flex;
   align-items: center;
@@ -88,7 +111,7 @@ a {
   }
 
   &__title {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: normal;
     margin-bottom: 4px;
 
@@ -103,7 +126,7 @@ a {
 .footer {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 0.875rem;
   padding: 20px 0;
 
   &__logo {
@@ -111,10 +134,10 @@ a {
   }
 }
 
-// SPメディアクエリ
+// SP用メディアクエリ
 @media screen and (max-width: $breakpoint-sp) {
   .section__title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .main-visual {
@@ -130,7 +153,7 @@ a {
 
   .header {
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 18px;
   }
 
   .section--work {
